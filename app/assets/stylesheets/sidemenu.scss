@@ -68,7 +68,19 @@ body {
         }
         .welcome__location {
             position: absolute;
-            bottom: 100px;
+            bottom: 50px;
+            .welcome__address {
+                color: var(--space-grey);
+                margin-bottom: 20px;
+            }
+            .welcome__phone {
+                a {
+                    color: var(--metal-blue);
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
         }
     }
 
