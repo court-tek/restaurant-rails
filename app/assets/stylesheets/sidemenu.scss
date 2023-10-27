@@ -1,0 +1,52 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#welcome {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    width: 100%;
+    height: 100vh;
+    .welcome__menu {
+        background-color: white;
+        padding: 50px;
+        .welcome__logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+            img {
+                max-width: 180px;
+            }
+        }
+        
+        .welcome__nav {
+            .welcome__nav-title {
+                text-transform: uppercase;
+                color: #0971ce;
+                font-weight: 700;
+                font-size: 1.2rem;
+                border-bottom: 1px solid #e2eaef;
+                padding-bottom: 20px;
+            }
+            .welcome__links {
+                li {
+                    a {
+                        text-transform: capitalize;
+                        color: black;
+                        font-weight: 700;
+                        text-decoration: none;
+                        display: block;
+                        transition: color 0.3s ease-in-out;
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .welcome__jumbo {
+        background-color: red;
+    }
+}
