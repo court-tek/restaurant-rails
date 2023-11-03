@@ -1,0 +1,47 @@
+<section id="welcome">
+    <div class="welcome__menu">
+        <div class="welcome__logo">
+            <%= image_tag "restaurantlogo" %>
+        </div>
+        <div class="welcome__nav">
+            <div class="welcome__nav-title">menu</div>
+            <ul class="welcome__links">
+                <li>
+                    <%= link_to "menu", class: "welcome__link" %>
+                </li>
+                <li>
+                    <%= link_to "waitlist", class: "welcome__link" %>
+                </li>
+                <li>
+                    <%= link_to "gift cards", class: "welcome__link" %>
+                </li>
+                <li>
+                    <%= link_to "offers", class: "welcome__link" %>
+                </li>
+            </ul>
+        </div>
+        <div class="welcome__social-media">
+            <%= link_to "http://facebook.com" do %>
+                <i class="fa fa-facebook-official"></i>
+            <% end %>
+            <%= link_to "http://twitter.com" do %>
+                <i class="fa fa-twitter-square"></i>
+            <% end %>
+            <%= link_to "http://instagram.com" do %>
+                <i class="fa fa-instagram"></i>
+            <% end %>
+        </div>
+        <div class="welcome__location">
+            <div class="welcome__address">
+                 234 main st,<br>
+                New York, NY 11178  
+            </div>
+           <div class="welcome__phone">
+                <%= link_to "786-718-6678" %>
+           </div>
+        </div>
+    </div>
+    <div class="welcome__jumbo">
+        jumbo
+    </div>
+</section>
