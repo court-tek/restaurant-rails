@@ -1,12 +1,14 @@
-<header id="">
+<header id="header">
     <div class="header__logo-container">
-        <%= image_tag "", alt: "Logo" %>
-        <i class="ti-menu"></i>
+        <%= image_tag "restaurantlogo", alt: "Logo" %>
     </div>
-    <nav>
-       <%= link_to "home", "#" %> 
-       <%= link_to "home", "#" %> 
-       <%= link_to "home", "#" %> 
-       <%= link_to "home", "#" %> 
-    </nav>
+    <div class="header__menu-toggle">
+        <i class="ti-menu visible-xs-inline"></i>
+    </div>
+    <div class="header__menu">
+        <%= link_to "home", "#" %> 
+        <%= link_to "home", "#" %> 
+        <%= link_to "home", "#" %> 
+        <%= link_to "home", "#" %> 
+    </div>
 </header>
