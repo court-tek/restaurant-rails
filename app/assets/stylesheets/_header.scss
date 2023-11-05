@@ -49,7 +49,9 @@ header {
       border: 0px solid black;
     }
 
-    .header__menu-toggle {}
+    .header__menu-toggle {
+      display: none;
+    }
 
     .header__menu {
       display: block;
