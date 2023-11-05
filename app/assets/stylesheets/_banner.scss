@@ -1,8 +1,35 @@
 .banner {
     height: 500px;
-    background-image: linear-gradient(135deg, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('https://github.com/court-tek/restaurant-rails/blob/main/app/assets/images/AdobeStock_162254112.jpeg?raw=true');
+    // position: relative;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2), #000), url('https://github.com/court-tek/restaurant-rails/blob/main/app/assets/images/AdobeStock_162254112.jpeg?raw=true');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    .banner__title {
+        padding: 200px 0 130px;
+        text-align: right;
+        h5 {
+            color: var(--blanco);
+        }
+        h1 {
+            text-transform: uppercase;
+            color: var(--blanco);
+            font-weight: 300;
+            font-size: 3.5rem;
+        }
+        .banner__contact-info {
+           
+            color: var(--blanco);
+            font-size: 0.9rem;
+            line-height: 1.5rem;
+            strong {
+                font-weight: 700;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+    }
 }
