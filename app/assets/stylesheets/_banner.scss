@@ -1,7 +1,8 @@
 // This applies from 0px to 768px
 .banner {
     height: 430px;
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2), #000), url('https://github.com/court-tek/restaurant-railsblob/main/app/assets/images/AdobeStock_162254112.jpeg?raw=true');
+    // background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2), #000), url('https://github.com/court-tek/restaurant-railsblob/main/app/assets/images/AdobeStock_162254112.jpeg?raw=true');
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.2), #000), url('AdobeStock_162254112.jpeg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
