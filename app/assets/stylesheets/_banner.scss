@@ -8,7 +8,7 @@
     background-size: cover;
 
     .banner__title {
-        padding: 200px 0 130px;
+        padding: 200px 0 80px;
         text-align: right;
         h5 {
             color: var(--blanco);
@@ -19,17 +19,20 @@
             font-weight: 300;
             font-size: 3.5rem;
         }
-        .banner__contact-info {
-           
-            color: var(--blanco);
-            font-size: 0.9rem;
-            line-height: 1.5rem;
-            strong {
-                font-weight: 700;
-            }
-            h2 {
-                font-size: 1.8rem;
-            }
+       
+    }
+
+    .banner__contact-info {       
+        color: var(--blanco);
+        text-align: right;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        strong {
+            font-weight: 700;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
         }
     }
 }
