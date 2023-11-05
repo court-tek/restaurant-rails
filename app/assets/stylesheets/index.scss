@@ -17,10 +17,16 @@
     --galaxy-grey: #525e66;
     --fito-red: #ed4852;
     --burger-orange: #f59c2e;
+    --wild-berry: #002d77;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: #1e1e1e;
+}
+
+.heading {
+    font-family: 'Bodoni Moda', serif;
 }
 
 // mixins
