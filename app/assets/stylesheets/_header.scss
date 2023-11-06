@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--blanco);
+  background-color: transparent;
   padding: 20px;
   .header__logo {
     display: inline-block;
@@ -34,7 +34,7 @@
       float: right;
 
       a {
-        color: var(--negro);
+        color: var(--blanco);
         text-transform: capitalize;
         font-weight: 500;
         text-decoration: none;
@@ -44,6 +44,15 @@
         padding: 0 12px;
         &:nth-child(5) {
           padding-right: 0;
+        }
+      }
+    }
+    &.sticky {
+      padding: 5px 0;
+      background-color: var(--blanco);
+      nav {
+        a {
+          color: var(--negro);
         }
       }
     }
