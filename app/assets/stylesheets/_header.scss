@@ -5,8 +5,9 @@
   left: 0;
   right: 0;
   background-color: transparent;
-  padding: 20px;
+  padding: 20px 0;
   transition: all .6s ease-in-out;
+  z-index: 50;
   .header__logo-container {
     display: inline-block;
     color: var(--blanco);
@@ -18,10 +19,22 @@
   .ti-menu {
     display: inline-block;
     float: right;
+    color: var(--blanco);
+    font-size: 20px;
   }
 
   nav {
     display: none;
+  }
+  &.sticky {
+    padding: 30px 0;
+    background-color: var(--fito-red);
+    .header__logo-container {
+      color: var(--blanco);
+    }
+    .ti-menu {
+      
+    }
   }
 }
 
@@ -29,6 +42,7 @@
 @media (min-width: 768px) {
   #header {
     height: 80px;
+    z-index: 50;
     .header__logo-container {
       h1 {
       }
