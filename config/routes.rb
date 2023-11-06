@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   # Defines the pages path route ("/")
   get 'about', to: 'pages#about'
+  get 'waitlist', to: 'pages#waitlist'
+  get 'offers', to: 'pages#offers'
 
   # Defines the root path route ("/")
   root "main#index"
