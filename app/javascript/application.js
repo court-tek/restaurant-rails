@@ -3,4 +3,3 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "./src/header"
 
-console.log("hello nurse");

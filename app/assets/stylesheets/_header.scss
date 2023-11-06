@@ -6,10 +6,12 @@
   right: 0;
   background-color: transparent;
   padding: 20px;
-  .header__logo {
+  .header__logo-container {
     display: inline-block;
-    -webkit-transition: all 0.4s linear 0s;
-    transition: all 0.4s linear 0s;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: capitalize;
   }
 
   .ti-menu {
@@ -25,6 +27,12 @@
 // This applies from 768px onwards
 @media (min-width: 768px) {
   #header {
+    height: 80px;
+    .header__logo-container {
+      h1 {
+      }
+    }
+
     .ti-menu {
       display: none;
     }
@@ -32,24 +40,27 @@
     nav {
       display: inline-block;
       float: right;
-
       a {
         color: var(--blanco);
+        padding: 0 27px;
         text-transform: capitalize;
         font-weight: 500;
         text-decoration: none;
         -webkit-transition: padding 0.4s linear 0s;
         transition: padding 0.4s linear 0s;
-        font-size: 16px;
-        padding: 0 12px;
+        font-size: 17px;
+        line-height: 26px;
         &:nth-child(5) {
           padding-right: 0;
         }
       }
     }
     &.sticky {
-      padding: 5px 0;
+      padding: 30px 0;
       background-color: var(--blanco);
+      .header__logo-container {
+        color: var(--negro);
+      }
       nav {
         a {
           color: var(--negro);
