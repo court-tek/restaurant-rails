@@ -6,10 +6,11 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   # Defines the pages path route ("/")
+  get 'food', to: 'pages#index'
   get 'about', to: 'pages#about'
   get 'waitlist', to: 'pages#waitlist'
   get 'offers', to: 'pages#offers'
-  get 'gift-cards', to: 'pages#giftcards'
+  get 'giftcards', to: 'pages#giftcards'
 
   # Defines the root path route ("/")
   root "main#index"
