@@ -33,6 +33,7 @@
             color: var(--negro);
             font-weight: 500;
             margin: 0 8px 0 0;
+            transition: all .4s ease-in-out;
             &:hover {
                 color: var(--fito-red);
             }
