@@ -38,6 +38,33 @@
   }
 }
 
+#pages-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--fito-red);
+  padding: 20px 0;
+  z-index: 50;
+  .pages-header__logo-container {
+    display: inline-block;
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    width: 20px;
+  }
+  .ti-menu {
+    display: inline-block;
+    float: right;
+    color: var(--blanco);
+    font-size: 30px;
+  }
+  nav {
+    display: none;
+  }
+}
+
 // This applies from 768px onwards
 @media (min-width: 768px) {
   #header {
