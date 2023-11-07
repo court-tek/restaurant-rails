@@ -1,0 +1,57 @@
+// This applies from 0px to 768
+#pages {
+    padding: 100px 0 50px;
+    background-color: var(--fondo-grey);
+    .pages__content {
+        padding: 20px;
+        background-color: var(--blanco);
+        .pages__column {
+            h1 {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 2.5rem;
+                text-transform: capitalize;
+            }   
+            .pages__text {
+                margin: 0 0 20px 0;
+                font-size: 1.2rem;
+                line-height: 1.5;
+                font-weight: 500;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+               
+            }
+        }
+    }
+}
+
+// This applies from 768px onwards
+@media (min-width: 768px) {
+    #pages {
+        height: 100vh;
+        padding: 100px 0;
+        .pages__content {
+            padding: 20px;
+            .pages__column {
+                h1 {
+                    font-size: 3rem;
+                    font-weight: 700;
+                }   
+                .pages__text {}
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    margin-top: 6rem;
+                }
+            }
+        }
+    }
+}
+  
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+  
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }

@@ -18,6 +18,7 @@
     --fito-red: #ed4852;
     --burger-orange: #f59c2e;
     --wild-berry: #002d77;
+    --fondo-grey: #EDEDEC;
 }
 
 body {
@@ -29,6 +30,13 @@ body {
     font-family: 'Bodoni Moda', serif;
 }
 
+#pages {
+    min-height: calc(100vh - 70px);
+}
+
+footer {
+    height: 50px;
+}
 // mixins
 @mixin gradient1 {
     background: var(--fito-red); /* old browsers */
