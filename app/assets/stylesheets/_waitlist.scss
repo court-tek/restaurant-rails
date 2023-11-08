@@ -1,0 +1,28 @@
+// This applies from 0px to 768
+@mixin reservation-form {
+    .reservation-form {
+        display: grid;
+        gap: 1.25rem;
+        width: 100%;
+        .form-group {
+            display: grid;
+            gap: 0.5rem;
+            input {
+                width: 100%;
+                padding: 12px 20px;
+            }
+        }
+    }
+    // This applies from 768px onwards
+    @media (min-width: 768px) {
+        .reservation-form {
+
+        }
+    }
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { }
+    
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { }
+}
