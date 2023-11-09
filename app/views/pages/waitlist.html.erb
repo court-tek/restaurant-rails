@@ -7,30 +7,30 @@
             }) do |form| %>
                 <div class="form-group">
                     <%= form.label :email_address, style: "display: block" %>
-                    <%= form.email_field :email_address %>
+                    <%= form.email_field :email_address, placeholder: "enter your email" %>
                 </div>
 
                 <div class="form-group">
                     <%= form.label :phone_number, style: "display: block" %>
-                    <%= form.telephone_field :phone_number %>
+                    <%= form.telephone_field :phone_number, placeholder: "enter your telephone" %>
                 </div>
                 
                 <div class="form-group">
                     <%= form.label :date, style: "display: block" %>
-                    <%= form.date_field :date, class: "date_of_reservation" %>
+                    <%= form.date_field :date, class: "date_of_reservation", placeholder: "select a date..." %>
                 </div>
 
                 <div class="form-group">
                     <%= form.label :how_many_guest, style: "display: block" %>
-                    <%= form.number_field :how_many_guest, in: 1..70 %>
+                    <%= form.number_field :how_many_guest, in: 1..70, placeholder: "enter your party size" %>
                 </div>
 
                 <div class="form-group">
                     <%= form.label :time, style: "display: block" %>
-                    <%= form.time_field :time, class: "time_of_reservation" %>
+                    <%= form.time_field :time, class: "time_of_reservation", placeholder: "select your time..." %>
                    
                 </div>
-                
+
                 <div class="form-group">
                     <%= form.submit "find a table" %>
                 </div>
