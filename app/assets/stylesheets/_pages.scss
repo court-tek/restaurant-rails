@@ -6,6 +6,7 @@
         padding: 20px;
         background-color: var(--blanco);
         @include reservation-form;
+        @include promotions;
         .pages__column {
             h1 {
                 font-size: 3rem;
