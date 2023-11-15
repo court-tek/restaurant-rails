@@ -1,0 +1,42 @@
+// This applies from 0px to 768
+@mixin reservation-form {
+    .form-group--full-width {
+        grid-column: 1 / -1;
+    }
+
+    .reservation-form {
+        display: grid;
+        gap: 1.25rem;
+        width: 100%;
+        grid-template-columns: 1fr;
+        .form-group {
+            display: grid;
+            gap: 0.5rem;
+            input {
+                width: 100%;
+                padding: 12px 20px;
+            }
+
+            .fito-btn {
+                border: none;
+                background-color: var(--fito-red);
+                color: var(--blanco);
+                font-weight: 700;
+                font-size: 1rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+    // This applies from 768px onwards
+    @media (min-width: 768px) {
+        .reservation-form {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { }
+    
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { }
+}

@@ -1,7 +1,45 @@
 <section id="pages">
     <div class="container">
         <div class="pages__content">
-            <h1>waitlists</h1>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pages__column">
+                        <h1>get on the list</h1>
+                        <%= form_with(class: "reservation-form", data: {
+                            controller: "flatpickr",
+                        }) do |form| %>
+                            <div class="form-group">
+                                <%= form.label :email_address, style: "display: block" %>
+                                <%= form.email_field :email_address, placeholder: "enter your email" %>
+                            </div>
+
+                            <div class="form-group">
+                                <%= form.label :phone_number, style: "display: block" %>
+                                <%= form.telephone_field :phone_number, placeholder: "enter your telephone" %>
+                            </div>
+                            
+                            <div class="form-group">
+                                <%= form.label :date, style: "display: block" %>
+                                <%= form.date_field :date, class: "date_of_reservation", placeholder: "select a date..." %>
+                            </div>
+
+                            <div class="form-group">
+                                <%= form.label :how_many_guest, style: "display: block" %>
+                                <%= form.number_field :how_many_guest, in: 1..70, placeholder: "enter your party size" %>
+                            </div>
+                
+                            <div class="form-group form-group--full-width">
+                                <%= form.label :time, style: "display: block" %>
+                                <%= form.time_field :time, class: "time_of_reservation", placeholder: "select your time..." %>
+                            </div>
+
+                            <div class="form-group">
+                                <%= form.submit "find a table", class: "fito-btn" %>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

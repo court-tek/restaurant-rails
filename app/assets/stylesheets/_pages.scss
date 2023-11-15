@@ -5,6 +5,8 @@
     .pages__content {
         padding: 20px;
         background-color: var(--blanco);
+        @include reservation-form;
+        @include promotions;
         .pages__column {
             h1 {
                 font-size: 3rem;
@@ -30,7 +32,6 @@
 // This applies from 768px onwards
 @media (min-width: 768px) {
     #pages {
-        height: 100vh;
         padding: 100px 0;
         .pages__content {
             padding: 20px;
@@ -45,6 +46,7 @@
                     height: auto;
                     margin-top: 6rem;
                 }
+                @include reservation-form;
             }
         }
     }
