@@ -2,7 +2,7 @@
     <div class="container">
         <div class="pages__content">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="pages__column">
                         <h1>get on the list</h1>
                         <%= form_with(class: "reservation-form", data: {
@@ -27,46 +27,16 @@
                                 <%= form.label :how_many_guest, style: "display: block" %>
                                 <%= form.number_field :how_many_guest, in: 1..70, placeholder: "enter your party size" %>
                             </div>
-
-                            <div class="form-group">
+                
+                            <div class="form-group form-group--full-width">
                                 <%= form.label :time, style: "display: block" %>
                                 <%= form.time_field :time, class: "time_of_reservation", placeholder: "select your time..." %>
-                            
-                            </div>
-                            <div class="form-group">
-                                <%= form.label :time, style: "display: block" %>
-                                <%= form.time_field :time, class: "time_of_reservation", placeholder: "select your time..." %>
-                            
-                            </div>
-                            <div class="form-group">
-                                <%= form.label :time, style: "display: block" %>
-                                <%= form.time_field :time, class: "time_of_reservation", placeholder: "select your time..." %>
-                            
                             </div>
 
                             <div class="form-group">
-                                <%= form.submit "find a table" %>
+                                <%= form.submit "find a table", class: "fito-btn" %>
                             </div>
                         <% end %>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="pages__column">
-                        <p class="pages__text">
-                            Tumeric viral lyft small batch fam. Chicharrones whatever blog, bitters neutra meggings aesthetic big mood yes plz jean shorts. Swag copper mug wolf beard truffaut fanny pack hella tilde tousled vexillologist. Retro swag grailed farm-to-table.
-                        </p>
-                        <p class="pages__text">
-                            Tumeric viral lyft small batch fam. Chicharrones whatever blog, bitters neutra meggings aesthetic big mood yes plz jean shorts. Swag copper mug wolf beard truffaut fanny pack hella tilde tousled vexillologist. Retro swag grailed farm-to-table.
-                        </p>
-                        <p class="pages__text">
-                            Tumeric viral lyft small batch fam. Chicharrones whatever blog, bitters neutra meggings aesthetic big mood yes plz jean shorts. Swag copper mug wolf beard truffaut fanny pack hella tilde tousled vexillologist. Retro swag grailed farm-to-table.
-                        </p>
-                        <p class="pages__text">
-                            Tumeric viral lyft small batch fam. Chicharrones whatever blog, bitters neutra meggings aesthetic big mood yes plz jean shorts. Swag copper mug wolf beard truffaut fanny pack hella tilde tousled vexillologist. Retro swag grailed farm-to-table.
-                        </p>
-                        <p class="pages__text">
-                            Tumeric viral lyft small batch fam. Chicharrones whatever blog, bitters neutra meggings aesthetic big mood yes plz jean shorts. Swag copper mug wolf beard truffaut fanny pack hella tilde tousled vexillologist. Retro swag grailed farm-to-table.
-                        </p>
                     </div>
                 </div>
             </div>
