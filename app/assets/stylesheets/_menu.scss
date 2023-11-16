@@ -1,6 +1,6 @@
 // This applies from 0px to 768
 @mixin menu{
-    .spacing__bottom > * {
+    .spacing__bottom > {
         margin-bottom: 20px;
     }
 
@@ -12,17 +12,48 @@
             text-transform: capitalize;
         }
         
-        .subheading {
+        .menu__description {
             text-align: center;
             font-size: 1rem;
             font-weight: 400;
             margin: 0 auto 50px auto;
         }
+
+        .menu__items {
+            display: grid;
+            gap: 2rem;
+            .menu__item {
+                .menu__item-title {
+                    text-align: center;
+                    margin-bottom: 0.8rem;
+                }
+
+                .menu__item-description {
+                    text-align: center;
+                    line-height: 1.5rem;
+                }
+            }
+        }
     }
     // This applies from 768px onwards
     @media (min-width: 768px) {
         .menu {
-
+            .menu__items {
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: 1fr 1fr;
+                .menu__item {
+                    .menu__item-title {
+                        text-align: center;
+                        margin-bottom: 0.8rem;
+                    }
+    
+                    .menu__item-description {
+                        text-align: center;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
         }
     }
     
