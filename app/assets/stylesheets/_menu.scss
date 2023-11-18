@@ -96,8 +96,30 @@
         visibility: hidden;
         opacity: 0;
 
-        &.menu-moadal--visible {
+        .menu-modal__container {
+            background-color: var(--fito-red);
+            width: 100%;
+            max-width: 500px;
+            color: var(--blanco);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .menu-modal__top-image {
+                img {
+                    max-width: 500px;
+                    width: 100%;
+                }
+            }
+            .menu-modal__info {
+                width: 100%;
+                padding: 40px 30px;
+            }
+
+        }
+
+        &.menu-modal--visible {
             visibility: visible;
+            opacity: 1;
         }
     }
     // This applies from 768px onwards
