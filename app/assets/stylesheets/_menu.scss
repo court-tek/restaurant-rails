@@ -85,6 +85,7 @@
     .menu-modal {
         position: fixed;
         top: 0;
+        right: 0;
         left: 0;
         width: 100vw;
         height: 100vh;
@@ -99,15 +100,16 @@
         .menu-modal__container {
             background-color: var(--fito-red);
             width: 100%;
-            max-width: 500px;
+            max-width: 350px;
             color: var(--blanco);
             display: flex;
             flex-direction: column;
             position: relative;
+            margin-right: 15px;
             .menu-modal__top-image {
                 img {
-                    max-width: 500px;
-                    width: 100%;
+                    max-width: 350px;
+                    width: 100;
                 }
             }
             .menu-modal__info {
