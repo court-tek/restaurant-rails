@@ -115,6 +115,16 @@
             .menu-modal__info {
                 width: 100%;
                 padding: 40px 30px;
+
+                .menu-modal__title {
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    margin-bottom: 1.6rem;
+                }
+
+                .menu-modal__description {
+                    line-height: 1.5;
+                }
             }
 
         }
