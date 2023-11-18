@@ -10,10 +10,13 @@
         
         nav {
             display: flex;
+            margin: 0 0 0 16px;
+            width: 100%;
             .nav__link {
                 color: var(--fito-red);
-                margin: 12px;
+                margin: 6px;
                 // font-size: clamp(0.4rem, 2vw, 1rem);
+                text-transform: capitalize;
                 font-size: 1rem;
                 display: inline-block;
             }
@@ -81,6 +84,20 @@
     @media (min-width: 768px) {
         .nav {
             width: 50%;
+            
+            nav {
+                display: flex;
+                margin: 0 0 0 8rem;
+                width: 100%;
+                .nav__link {
+                    color: var(--fito-red);
+                    margin: 0 10px;
+                    // font-size: clamp(0.4rem, 2vw, 1rem);
+                    text-transform: capitalize;
+                    font-size: 1rem;
+                    display: inline-block;
+                }
+            }
         }
         .menu {
             .menu__items {
