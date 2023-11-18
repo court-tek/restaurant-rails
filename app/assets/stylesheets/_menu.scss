@@ -95,6 +95,10 @@
         transition: all 0.4s ease-in-out;
         visibility: hidden;
         opacity: 0;
+
+        &.menu-moadal--visible {
+            visibility: visible;
+        }
     }
     // This applies from 768px onwards
     @media (min-width: 768px) {
