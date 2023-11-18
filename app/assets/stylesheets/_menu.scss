@@ -106,6 +106,15 @@
             flex-direction: column;
             position: relative;
             margin-right: 15px;
+            .menu-modal__close-btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 10px;
+                border-radius: 50%;
+                background-color: var(--negro);
+            }
+
             .menu-modal__top-image {
                 img {
                     max-width: 350px;
