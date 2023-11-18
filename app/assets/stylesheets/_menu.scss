@@ -161,6 +161,29 @@
                 }
             }
         }
+
+        .menu-modal {
+            .menu-modal__container {
+                background-color: var(--fito-red);
+                width: 100%;
+                max-width: 500px;
+                color: var(--blanco);
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-right: 15px;
+                .menu-modal__top-image {
+                    img {
+                        max-width: 500px;
+                        width: 100;
+                    }
+                }
+                .menu-modal__info {
+                    width: 100%;
+                    padding: 40px 30px;
+                }
+    
+            }
     }
     
     // Large devices (desktops, 992px and up)
