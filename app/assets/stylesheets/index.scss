@@ -19,15 +19,19 @@
     --burger-orange: #f59c2e;
     --wild-berry: #002d77;
     --fondo-grey: #EDEDEC;
+
+    // fonts
+    --lato: 'Lato', sans-serif;
+    --playfair-display: 'Playfair Display', serif;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #1e1e1e;
 }
 
 .heading {
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 #pages {
