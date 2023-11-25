@@ -4,7 +4,6 @@ const menuItemTitle = document.querySelector('.menu__item-title');
 const modalInfoTitle = document.querySelector('.menu-modal__info');
 const element = document.querySelector('.menu__items');
 
-
 const closeModal = function() {
     menuModal.classList.remove('menu-modal--visible');
 }
@@ -15,6 +14,5 @@ element.addEventListener('click', (e) => {
       menuModal.classList.add('menu-modal--visible');
     }
 });
-
 
 closeModalBtn.addEventListener('click', closeModal);
