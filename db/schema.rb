@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_11_26_200737) do
+ActiveRecord::Schema[7.1].define(version: 2023_11_27_082554) do
   create_table "menu_categories", force: :cascade do |t|
     t.string "title"
     t.string "description"
@@ -24,6 +24,9 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_26_200737) do
     t.datetime "updated_at", null: false
     t.string "item_description"
     t.string "item_image"
+    t.integer "menu_category_id"
+    t.index ["menu_category_id"], name: "index_menu_items_on_menu_category_id"
   end
 
+  add_foreign_key "menu_items", "menu_categories"
 end
