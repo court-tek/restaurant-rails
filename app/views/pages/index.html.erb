@@ -13,15 +13,37 @@
             <h1 class="menu-page__title">dinner menu</h1>
             <div class="row">
                 <div class="col-md-12">
-                    <% @menu_categories.each do |cat| %>
-                        <div class="menu">
-                            <h1 class="menu__title"><%= cat.title %></h1>
-                            <hr class="menu__line-break">
-                            <div class="menu__description"><%= cat.description %></div>
-                            
-                        </div> 
-                        <%= render "menu_items" %>
-                    <% end %>                   
+                    <div class="menu">
+                        <h1 class="menu__title"><%= @variable[0][0] %></h1>
+                        <hr class="menu__line-break">
+                        <div class="menu__description"><%= @variable[0][1] %></div>
+                        <div class="menu__items">
+                            <% @menu.each do |item| %>
+                                <% if item.menu_category_id == 1 %>
+                                    <div class="menu__item">
+                                        <div class="menu__item-title"><%= item.item %></div>
+                                        <div class="menu__item-description"><%= item.item_description %></div>
+                                    </div>
+                                <% end %>
+                            <% end %>
+                        </div>
+                    </div> 
+
+                    <div class="menu">
+                        <h1 class="menu__title"><%= @variable[4][0] %></h1>
+                        <hr class="menu__line-break">
+                        <div class="menu__description"><%= @variable[4][1] %></div>
+                        <div class="menu__items">
+                            <% @menu.each do |item| %>
+                                <% if item.menu_category_id == 2 %>
+                                    <div class="menu__item">
+                                        <div class="menu__item-title"><%= item.item %></div>
+                                        <div class="menu__item-description"><%= item.item_description %></div>
+                                    </div>
+                                <% end %>
+                            <% end %>
+                        </div>
+                    </div> 
                 </div>
             </div>
             <section class="menu-modal">

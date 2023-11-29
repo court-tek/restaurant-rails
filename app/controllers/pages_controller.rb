@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
     def index
-        @menu_categories = MenuCategory.all
-        @menu_items = MenuItem.joins(:menu_category)
+        assoc = MenuCategory.includes(:menu_items)
+        @variable = assoc.pluck(:title, :description)
+        @menu = MenuItem.all
     end
 
     def promotions 
